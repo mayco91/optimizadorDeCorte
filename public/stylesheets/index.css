@@ -1,0 +1,50 @@
+#bodyIndex {
+ background-color: rgba(56, 3, 56, 0.95);
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#fieldsetIndex {
+  background: url("/images/fondo.avif");
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#tituloIndex {
+  color: rgb(30, 5, 88);
+  font-size: 40px;
+  
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#subContenedor {
+  display: flex;
+  width: 100%;
+  margin: 6px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+#botonAgregar{
+  background-color: rgb(56, 3, 56);
+  color: white
+}
+
+#botonProcesar{
+  background:linear-gradient(to bottom, rgb(56, 3, 56), rgba(0, 0, 0, 0.87));
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+

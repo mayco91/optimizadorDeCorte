@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Barras</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="bodyVista">
+<h1 class="tituloVista">Resultados de la Optimización</h1>
+<% if (barras && barras.cantidadBarras > 0) { %>
+    <p class="cantidadBarras">Cantidad de Barras: <%= barras.cantidadBarras %></p>
+    <% barras.barrasOptimizadas.forEach((barra, index) => { %>
+        <table class="tablaVista">
+            <tr class="tituloBarra">
+                <th colspan="2">Barra <%= index + 1 %></th>
+            </tr>
+           <tr>
+                <td class="tituloCorte">Corte</td>
+                <td class="tituloTipo">Tipología</td>
+            </tr>
+            <% barra.forEach(corte => { %>
+                <tr>
+                    <td class="textoCorte"><%= corte.medida %>mm</td>
+                    <td class="textoTipo"><%= corte.tipologia %></td>
+                </tr>
+            <% }); %>
+        </table>
+        <br>
+    <% }); %>
+<% } else { %>
+    <p>No se encontraron resultados de optimización.</p>
+<% } %>
+</body>
+</html>

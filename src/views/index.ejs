@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href="stylesheets/style.css" />
+  </head>
+  <body id="bodyIndex">
+    <fieldset id="fieldsetIndex">
+    <h1 id="tituloIndex" style="text-align: center;">Ingrese los datos</h1>
+    <form id="form" action="/" method="POST">
+      <div id="contenedor" class="contenedor" >
+        <div id="subContenedor" >
+        <div>
+        <label id="labels" for="">Tipologia</label>
+        <input type="text" name="tipologia" oninput="this.value = this.value.toUpperCase()" id="texto">
+      </div>
+      <div>
+        <label id="labels" for="">Ancho (en milimetros)</label>
+        <input id="ancho" type="number" name="ancho">
+      </div>
+      <div>
+        <label id="labels" for="">Alto (en milimetros)</label>
+        <input id="alto" type="number" name="alto">
+      </div>
+    </div>
+    </div>
+    <div id="contenedorBotonAgregar">
+      <button id="botonAgregar" type="button" onclick="agregarMedida()">+</button>
+    </div>
+<div id="ContenedorBotonProcesar" style="display: flex;margin: 20px;justify-content: center;">
+      <button id="botonProcesar" type="submit" > Optimizar barras </button>
+    </div>
+    </form>
+   
+  </fieldset>
+  
+<script src="/javascripts/agregarMedida.js"></script>
+  </body>
+  
+</html>

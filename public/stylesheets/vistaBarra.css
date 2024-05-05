@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    
+}
+
+.bodyVista{
+    background: url("/images/fondoVista.jpg");
+    background-size: cover;
+}
+
+.tituloVista{
+    text-align: center;
+    color: rgb(58, 3, 58);
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+.cantidadBarras{
+    color: rgb(58, 3, 58);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.tituloBarra{
+    background-color: rgb(119, 1, 119);
+    
+    font-size: 22px;
+}
+
+.tituloCorte,.tituloTipo{
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+}
+
+.textoCorte,.textoTipo{
+    background-color: lightskyblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
