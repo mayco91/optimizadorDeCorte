@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= title %></title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel='stylesheet' href="stylesheets/style.css" />
   </head>
   <body id="bodyIndex">
@@ -34,6 +35,15 @@
    
   </fieldset>
   
+  <script>
+    // Mostrar un mensaje de bienvenida con SweetAlert y carita feliz
+    Swal.fire({
+        title: '¡Bienvenido!',
+        text: 'Gracias por utilizar nuestra aplicación.',
+        iconHtml: '<span style="font-size: 2em;">👏</span>', // Emoji de carita feliz
+        showConfirmButton: false // Oculta el botón de confirmación
+    });
+</script>
 <script src="/javascripts/agregarMedida.js"></script>
   </body>
   
